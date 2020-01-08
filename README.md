@@ -31,9 +31,9 @@ npm start
 ```
 
 or can be used on heroku at:
-https://booklist-cnr.herokuapp.com/
+https://inventory-list.herokuapp.com/
 
-Signup with your own account on the sign up page: https://booklist-cnr.herokuapp.com/signup
+Signup with your own account on the sign up page: https://inventory-list.herokuapp.com/signup
 or login with
 
 username: `demo1`   
