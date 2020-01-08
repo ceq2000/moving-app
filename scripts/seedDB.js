@@ -5,7 +5,10 @@ var bcrypt = require('bcryptjs');
 const db = require("../models");
 
 // This file empties the Book and User collections and inserts the seeds below
-
+// mongoose.connect(
+//   process.env.MONGODB_URI ||
+//   "mongodb://localhost/moving-app"
+);
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI, {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true});
 
