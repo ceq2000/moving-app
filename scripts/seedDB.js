@@ -8,9 +8,9 @@ const db = require("../models");
 // mongoose.connect(
 //   process.env.MONGODB_URI ||
 //   "mongodb://localhost/moving-app"
-);
+// );
 // Connect to the Mongo DB
-mongoose.connect(process.env.MONGODB_URI, {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true});
+mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true });
 
 const demoUserSeed = [
   {
@@ -150,7 +150,7 @@ async function seed() {
     // clear DB
     await db.Book.remove({});
     await db.User.remove({});
-    
+
     // add demo users
     const saltRounds = parseInt(process.env.PASSWORD_SALT_ROUNDS, 10);
     const password = process.env.SEED_USER_PASSWORD;
@@ -160,7 +160,7 @@ async function seed() {
     }));
 
     const userSeedOp = await db.User.collection.insertMany(demoUserSeed);
-    
+
     // put demoUser's ID on each book
     bookSeed.forEach((it, idx) => it.user = userSeedOp.insertedIds[idx % 2]);
 
