@@ -8,7 +8,6 @@ const db = require("../models");
 // mongoose.connect(
 //   process.env.MONGODB_URI ||
 //   "mongodb://localhost/moving-app"
-);
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI, {useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true});
 
