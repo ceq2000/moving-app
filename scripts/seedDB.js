@@ -153,7 +153,17 @@ const itemSeed = [
     purchaseDate: "09/27/18",
     purchasePrice: "$450",
     date: new Date(Date.now())
+  },
+
+  {
+    name: "Samsung TV",
+    location: "Living Room",
+    description: "Smart TV, 34 inches",
+    purchaseDate: "09/27/18",
+    purchasePrice: "$450",
+    date: new Date(Date.now())
   }
+
 ];
 
 async function seed() {
