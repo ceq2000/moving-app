@@ -13,7 +13,7 @@
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build && npm run seed"
   },
-  "author": "",
+  "author": "David Levens",
   "license": "ISC",
   "devDependencies": {
     "concurrently": "^5.0.2",
