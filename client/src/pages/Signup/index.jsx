@@ -41,7 +41,7 @@ const Signup = (props) => {
         </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-            <h5 className="card-title">Signup to create your reading list</h5>
+            <h5 className="card-title">Signup to create your homes inventory</h5>
             <Formik
                 initialValues={{ firstName: '', lastName: '', email: '', username:'', password: '' }}
                 validationSchema={schema}
