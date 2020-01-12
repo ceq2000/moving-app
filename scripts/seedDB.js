@@ -145,11 +145,36 @@ const bookSeed = [
   }
 ];
 
+
+// Insert seeds from "Item" database collection. Reference: check connected file: './models/item.js'  //
+
+const itemSeed = [
+  {
+    name: "Samsung TV",
+    location: "Living Room",
+    description: "Smart TV, 34 inches",
+    purchaseDate: "09/27/18",
+    purchasePrice: "$450",
+    date: new Date(Date.now())
+  },
+
+  {
+    name: "Samsung TV",
+    location: "Living Room",
+    description: "Smart TV, 34 inches",
+    purchaseDate: "09/27/18",
+    purchasePrice: "$450",
+    date: new Date(Date.now())
+  }
+
+];
+
 async function seed() {
   try {
     // clear DB
     await db.Book.remove({});
-    await db.User.remove({});
+    await db.User.remove({}); phill
+    await db.Item.remove({});sandbox1
 
     // add demo users
     const saltRounds = parseInt(process.env.PASSWORD_SALT_ROUNDS, 10);
@@ -167,6 +192,13 @@ async function seed() {
     // add demo books to DB
     const bookSeedOp = await db.Book.collection.insertMany(bookSeed);
     console.log(`Inserted ${bookSeedOp.result.n} books.`);
+
+    // put demoUser's ID on each item // ––––––––––––––––––––––––––––––––––––––––––––––––
+    itemSeed.forEach((it, idx) => it.user = userSeedOp.insertedIds[idx % 2]);
+
+    // add demo items to DB // ––––––––––––––––––––––––––––––––––––––––––––––––
+    const itemSeedOp = await db.Item.collection.insertMany(itemSeed);
+    console.log(`Inserted ${itemSeedOp.result.n} items.`);
 
     process.exit(0);
 

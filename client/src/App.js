@@ -10,6 +10,11 @@ import NoMatch from "./pages/NoMatch";
 import Nav from "./components/Nav";
 import Signup from "./pages/Signup";
 
+import itemDetails from "./pages/itemDetails";
+import Items from "./pages/items";
+
+
+
 // see https://reacttraining.com/react-router/web/example/auth-workflow
 
 export default function App() {
@@ -23,6 +28,10 @@ export default function App() {
           <ConnectedPublicRoute path="/signup" component={Signup} />
           <ConnectedPrivateRoute exact path="/books" component={Books} />
           <ConnectedPrivateRoute path="/books/:id" component={Detail} />
+
+          <ConnectedPrivateRoute exact path="/items" component={Items} />
+          <ConnectedPrivateRoute path="/items/:id" component={itemDetails} /> 
+
           <Route path="*"><NoMatch /></Route>
         </Switch>
       </div>
