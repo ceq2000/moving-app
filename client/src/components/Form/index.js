@@ -1,7 +1,7 @@
 import React from "react";
 import {Alert} from 'react-bootstrap';
 import './App.scss';
-@import "variables.scss";
+// @import "./variables.scss";
 
 // import "moving-app/App.scss";
 // This file exports the Input, TextArea, and FormBtn components
