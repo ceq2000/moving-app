@@ -7,7 +7,7 @@ import { onLogout } from '../../redux/actions'
 
 const Nav = (props) => {
   return   <Navbar className='navbar-expand-lg navbar-dark bg-primary justify-content-between'>
-  <Navbar.Brand href="/">React Reading List</Navbar.Brand>
+  <Navbar.Brand href="/">Inventory List</Navbar.Brand>
   {
     props.user ?
       <Button onClick={props.onLogout}>Logout</Button> :
