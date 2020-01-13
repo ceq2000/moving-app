@@ -16,26 +16,6 @@ class Items extends Component {
         purchaseDate: "",
         purchasePrice: "",
         
-        // items: [
-        //     {
-        //       name: "Samsung TV",
-        //       location: "Living Room",
-        //       description: "Smart TV, 34 inches",
-        //       purchaseDate: "09/27/18",
-        //       purchasePrice: "$450",
-        //       date: new Date(Date.now())
-        //     },
-          
-        //     {
-        //       name: "Samsung TV",
-        //       location: "Living Room",
-        //       description: "Smart TV, 34 inches",
-        //       purchaseDate: "09/27/18",
-        //       purchasePrice: "$450",
-        //       date: new Date(Date.now())
-        //     }
-          
-        //   ]
     };
 
     componentDidMount() {
@@ -53,7 +33,7 @@ class Items extends Component {
             .catch(err => console.log(err));
     };
 
-    deleteBook = id => {
+    deleteItem = id => {
         API.deleteItem(id)
             .then(res => this.loadItems())
             .catch(err => console.log(err));
@@ -126,7 +106,7 @@ class Items extends Component {
                                     <ListItem key={item._id}>
                                         <Link to={"/items/" + item._id}>
                                             <strong>
-                                                {item.title} in {item.location}
+                                                {item.name} in {item.location}
                                             </strong>
                                         </Link>
                                         <DeleteBtn onClick={() => this.deleteItem(item._id)} />
