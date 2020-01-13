@@ -4,7 +4,7 @@ import { Button, Col, Form, Modal } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Formik } from 'formik';
 import * as yup from 'yup';
-
+import './App.scss';
 import { onLogin } from '../../redux/actions'
 import API from '../../api'
 import {ServerError} from '../../components/Form';
@@ -37,7 +37,7 @@ const Signup = (props) => {
     >
         <Modal.Header closeButton>
             <Modal.Title id="signup-form">
-                Reading List Signup
+                Your homes current inventory
         </Modal.Title>
         </Modal.Header>
         <Modal.Body>
