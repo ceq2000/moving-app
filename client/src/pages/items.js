@@ -73,26 +73,26 @@ class Items extends Component {
                             <Input
                                 value={this.state.name}
                                 onChange={this.handleInputChange}
-                                name="title"
-                                placeholder="Title (required)"
+                                name="name"
+                                placeholder="Item Name (required)"
                             />
                             <Input
                                 value={this.state.location}
                                 onChange={this.handleInputChange}
-                                name="author"
-                                placeholder="Author (required)"
+                                name="location"
+                                placeholder="Location (required)"
                             />
                             <TextArea
                                 value={this.state.description}
                                 onChange={this.handleInputChange}
-                                name="synopsis"
-                                placeholder="Synopsis (Optional)"
+                                name="description"
+                                placeholder="Description (required)"
                             />
                             <FormBtn
                                 disabled={!(this.state.name && this.state.location)}
                                 onClick={this.handleFormSubmit}
                             >
-                                Submit Book
+                                Add Item
               </FormBtn>
                         </form>
                     </Col>
