@@ -4,7 +4,7 @@ import { Button, Col, Form, Modal } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Formik } from 'formik';
 import * as yup from 'yup';
-
+import './App.scss';
 import { onLogin } from '../../redux/actions'
 import API from '../../api'
 import {ServerError} from '../../components/Form';
@@ -37,11 +37,11 @@ const Signup = (props) => {
     >
         <Modal.Header closeButton>
             <Modal.Title id="signup-form">
-                Reading List Signup
+                Your homes current inventory
         </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-            <h5 className="card-title">Signup to create your reading list</h5>
+            <h5 className="card-title">Signup to create your homes inventory</h5>
             <Formik
                 initialValues={{ firstName: '', lastName: '', email: '', username:'', password: '' }}
                 validationSchema={schema}
