@@ -52,7 +52,7 @@ class Items extends Component {
             API.saveItem({
                 name: this.state.name,
                 location: this.state.location,
-                description: this.state.despcrition,
+                description: this.state.description,
                 purchaseDate: this.state.purchaseDate,
                 purchasePrice: this.state.purchasePrice
             })

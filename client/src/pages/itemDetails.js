@@ -34,14 +34,14 @@ class itemDetails extends Component {
                 <Row>
                     <Col size="md-10 md-offset-1">
                         <article>
-                            <h1>Synopsis</h1>
+                            <h1>Description</h1>
                             <p>{this.state.item.description}</p>
                         </article>
                     </Col>
                 </Row>
                 <Row>
                     <Col size="md-2">
-                        <Link to="/">← Back to Authors</Link>
+                        <Link to="/">← Back to Items</Link>
                     </Col>
                 </Row>
             </Container>
