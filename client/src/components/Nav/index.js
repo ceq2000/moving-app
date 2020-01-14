@@ -16,6 +16,9 @@ const Nav = (props) => {
       </Link>
   }
 </Navbar>;
+
+
+
 };
 
 export default connect(
