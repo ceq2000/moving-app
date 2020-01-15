@@ -7,12 +7,8 @@ const db = require("../models");
 // This file empties the Book and User collections and inserts the seeds below
 // mongoose.connect(
 //   process.env.MONGODB_URI ||
-<<<<<<< HEAD
 //   "mongodb://localhost/moving-app" );
 
-=======
-//   "mongodb://localhost/moving-app"
->>>>>>> oscar-branch
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true });
 
@@ -177,8 +173,8 @@ async function seed() {
   try {
     // clear DB
     await db.Book.remove({});
-    await db.User.remove({}); phill
-    await db.Item.remove({});sandbox1
+    await db.User.remove({});
+    await db.Item.remove({});
 
     // add demo users
     const saltRounds = parseInt(process.env.PASSWORD_SALT_ROUNDS, 10);

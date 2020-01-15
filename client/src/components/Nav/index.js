@@ -4,7 +4,7 @@ import { Button, Navbar } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 
 import { onLogout } from '../../redux/actions'
-import './App.scss';
+// import './App.scss';
 const Nav = (props) => {
   return   <Navbar className='navbar-expand-lg navbar-dark justify-content-left'>
   <Navbar.Brand href="/">Home Inventory</Navbar.Brand>

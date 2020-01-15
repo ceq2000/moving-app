@@ -1,5 +1,5 @@
 import React from "react";
-import './App.scss';
+// import './App.scss';
 // This file exports both the List and ListItem components
 
 export function List({ children }) {
