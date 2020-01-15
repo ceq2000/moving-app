@@ -25,6 +25,10 @@ export default function App() {
 
   const [isOpen, setOpen] = useState(true)
   const toggle = () => setOpen(!isOpen)
+<<<<<<< HEAD
+=======
+  
+>>>>>>> parent of bfdf3cc... Added props.children to content.js to put page views inside content
 
   return (
     <Router>
@@ -38,7 +42,11 @@ export default function App() {
         <ConnectedPublicRoute path="/signup" component={Signup} />
         <div className="App wrapper">
           <SideBar toggle={toggle} isOpen={isOpen} />
+<<<<<<< HEAD
           <div>
+=======
+        
+>>>>>>> parent of bfdf3cc... Added props.children to content.js to put page views inside content
             <Content toggle={toggle} isOpen={isOpen} />
             <ConnectedPrivateRoute exact path="/books" component={Books} />
             <ConnectedPrivateRoute path="/books/:id" component={Detail} />
@@ -49,6 +57,12 @@ export default function App() {
 
           <Route path="*"><NoMatch /></Route>
 
+<<<<<<< HEAD
+=======
+            <Route path="*"><NoMatch /></Route>
+         
+
+>>>>>>> parent of bfdf3cc... Added props.children to content.js to put page views inside content
         </div>
       </Switch>
 
