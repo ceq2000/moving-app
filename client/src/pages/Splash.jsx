@@ -1,4 +1,8 @@
 import React from "react";
+<<<<<<< HEAD
+=======
+import './App.scss';
+>>>>>>> parent of 80a48e4... commented out the App.scss in splash.jsx to let app compile
 
 import { Button, Col, Row, Container, Jumbotron } from 'react-bootstrap';
 
@@ -27,7 +31,7 @@ export default function Splash(props) {
                         </Col>
                     </Row>
                     <Jumbotron fluid className='mt-4'>
-                        <h1 className='text-center'>We got you Cover to Cover!</h1>
+                        <h1 className='text-center'>We got you!</h1>
                     </Jumbotron>
                 </Col>
             </Row>
