@@ -23,35 +23,25 @@ import Items from "./pages/items";
 
 export default function App() {
 
-  
-  
+
+
 
   return (
     // div here that is flex coloumn
     <Router>
       <Nav />
-
-
-
       <Switch>
         <ConnectedPublicRoute exact path="/" component={Splash} />
         <ConnectedPublicRoute path="/login" component={Login} />
         <ConnectedPublicRoute path="/signup" component={Signup} />
-        
-          
-        
-            
-            <ConnectedPrivateRoute exact path="/books" component={Books} />
-            <ConnectedPrivateRoute path="/books/:id" component={Detail} />
+        <ConnectedPrivateRoute exact path="/books" component={Books} />
+        <ConnectedPrivateRoute path="/books/:id" component={Detail} />
 
-            <ConnectedPrivateRoute exact path="/items" component={Items} />
-            <ConnectedPrivateRoute path="/items/:id" component={itemDetails} />
+        <ConnectedPrivateRoute exact path="/items" component={Items} />
+        <ConnectedPrivateRoute path="/items/:id" component={itemDetails} />
 
 
-            <Route path="*"><NoMatch /></Route>
-         
-
-        
+        <Route path="*"><NoMatch /></Route>
       </Switch>
 
     </Router>
@@ -67,16 +57,16 @@ function PrivateRoute({ component: Component, ...rest }) {
   const toggle = () => setOpen(!isOpen)
 
   return (
-    
+
     <Route
       {...rest}
       render={routeProps =>
         rest.user ? (
           <div className="App wrapper">
-              <SideBar toggle={toggle} isOpen={isOpen} />
-              <Content toggle={toggle} isOpen={isOpen} >
-          <Component {...routeProps} />
-          </Content>
+            <SideBar toggle={toggle} isOpen={isOpen} />
+            <Content toggle={toggle} isOpen={isOpen} >
+              <Component {...routeProps} />
+            </Content>
           </div>
         ) : (
             <Redirect
@@ -88,7 +78,7 @@ function PrivateRoute({ component: Component, ...rest }) {
           )
       }
     />
-   
+
   );
 }
 
