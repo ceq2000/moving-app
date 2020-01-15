@@ -9,11 +9,15 @@ export default function Splash(props) {
             <Row>
                 <Col >
                     <Jumbotron fluid className='mt-4'>
+<<<<<<< HEAD
 
                         <h1 className='text-center'>Inventory?</h1>
 
                         <h1 className='text-center'>Inventory?</h1>
 
+=======
+                        <h1 className='text-center'>Love To Read?</h1>
+>>>>>>> parent of 7a8866f... Changed titles in public routes
                     </Jumbotron>
                     <Row className="text-center">
                         <Col >
@@ -32,11 +36,15 @@ export default function Splash(props) {
                         </Col>
                     </Row>
                     <Jumbotron fluid className='mt-4'>
+<<<<<<< HEAD
 
                         <h1 className='text-center'>We got you covered!</h1>
 
                         <h1 className='text-center'>We got you covered!</h1>
 
+=======
+                        <h1 className='text-center'>We got you Cover to Cover!</h1>
+>>>>>>> parent of 7a8866f... Changed titles in public routes
                     </Jumbotron>
                 </Col>
             </Row>

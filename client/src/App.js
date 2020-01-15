@@ -25,10 +25,8 @@ export default function App() {
 
   const [isOpen, setOpen] = useState(true)
   const toggle = () => setOpen(!isOpen)
-  
 
   return (
-    // div here that is flex coloumn
     <Router>
       <Nav />
 
@@ -40,17 +38,16 @@ export default function App() {
         <ConnectedPublicRoute path="/signup" component={Signup} />
         <div className="App wrapper">
           <SideBar toggle={toggle} isOpen={isOpen} />
-        
+          <div>
             <Content toggle={toggle} isOpen={isOpen} />
             <ConnectedPrivateRoute exact path="/books" component={Books} />
             <ConnectedPrivateRoute path="/books/:id" component={Detail} />
 
             <ConnectedPrivateRoute exact path="/items" component={Items} />
             <ConnectedPrivateRoute path="/items/:id" component={itemDetails} />
+          </div>
 
-
-            <Route path="*"><NoMatch /></Route>
-         
+          <Route path="*"><NoMatch /></Route>
 
         </div>
       </Switch>
