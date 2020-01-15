@@ -6,9 +6,8 @@ import { Switch, Route } from 'react-router-dom';
 
 export default props => (
     <Container fluid className={classNames('content', { 'is-open': props.isOpen })}>
-    <NavBar toggle={props.toggle} />
-        {props.children} 
-        {/* <Switch>
+        <NavBar toggle={props.toggle} />
+        <Switch>
             <Route exact path="/" component={() => "Hello"} />
             <Route exact path="/about" component={() => "About"} />
             <Route exact path="/Pages" component={() => "Pages"} />
@@ -23,12 +22,11 @@ export default props => (
             <Route exact path="/page-2" component={() => "page-2"} />
             <Route exact path="/page-3" component={() => "page-3"} />
             <Route exact path="/page-4" component={() => "page-4"} />
-            <Route exact path="/pages/books" component={() => "Books"} />
+            <Route exact path="/books" component={() => "Books"} />
             <Route path="/books/:id" component={() => "Detail"} />
 
             <Route exact path="/items" component={() => "Item"} />
             <Route path="/items/:id" component={() => "itemDetails"} />
-        </Switch> */}
-       
+        </Switch>
     </Container>
 )
