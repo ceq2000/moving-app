@@ -1,3 +1,5 @@
+@import "utilities/App";
+
 .list-overflow-container {
   max-height: 545px;
   border: 1px #DDDDDD solid;
@@ -30,4 +32,7 @@
 
 .list-overflow-container li:last-child {
   border-bottom: none;
+}
+.delete-btn {
+  color:  blueviolet;
 }

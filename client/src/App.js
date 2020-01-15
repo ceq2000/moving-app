@@ -110,7 +110,7 @@ function PublicRoute({ component: Component, ...rest }) {
         ) : (
             <Redirect
               to={{
-                pathname: "/books"
+                pathname: "/items"
               }}
             />
           )
