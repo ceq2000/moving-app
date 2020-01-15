@@ -23,14 +23,11 @@ import Items from "./pages/items";
 
 export default function App() {
 
-  const [isOpen, setOpen] = useState(true)
-  const toggle = () => setOpen(!isOpen)
-<<<<<<< HEAD
-=======
   
->>>>>>> parent of bfdf3cc... Added props.children to content.js to put page views inside content
+  
 
   return (
+    // div here that is flex coloumn
     <Router>
       <Nav />
 
@@ -40,30 +37,21 @@ export default function App() {
         <ConnectedPublicRoute exact path="/" component={Splash} />
         <ConnectedPublicRoute path="/login" component={Login} />
         <ConnectedPublicRoute path="/signup" component={Signup} />
-        <div className="App wrapper">
-          <SideBar toggle={toggle} isOpen={isOpen} />
-<<<<<<< HEAD
-          <div>
-=======
         
->>>>>>> parent of bfdf3cc... Added props.children to content.js to put page views inside content
-            <Content toggle={toggle} isOpen={isOpen} />
+          
+        
+            
             <ConnectedPrivateRoute exact path="/books" component={Books} />
             <ConnectedPrivateRoute path="/books/:id" component={Detail} />
 
             <ConnectedPrivateRoute exact path="/items" component={Items} />
             <ConnectedPrivateRoute path="/items/:id" component={itemDetails} />
-          </div>
 
-          <Route path="*"><NoMatch /></Route>
 
-<<<<<<< HEAD
-=======
             <Route path="*"><NoMatch /></Route>
          
 
->>>>>>> parent of bfdf3cc... Added props.children to content.js to put page views inside content
-        </div>
+        
       </Switch>
 
     </Router>
@@ -75,12 +63,21 @@ export default function App() {
 // screen if you're not yet authenticated.
 function PrivateRoute({ component: Component, ...rest }) {
 
+  const [isOpen, setOpen] = useState(true)
+  const toggle = () => setOpen(!isOpen)
+
   return (
+    
     <Route
       {...rest}
       render={routeProps =>
         rest.user ? (
+          <div className="App wrapper">
+              <SideBar toggle={toggle} isOpen={isOpen} />
+              <Content toggle={toggle} isOpen={isOpen} >
           <Component {...routeProps} />
+          </Content>
+          </div>
         ) : (
             <Redirect
               to={{
@@ -91,6 +88,7 @@ function PrivateRoute({ component: Component, ...rest }) {
           )
       }
     />
+   
   );
 }
 
@@ -112,7 +110,7 @@ function PublicRoute({ component: Component, ...rest }) {
         ) : (
             <Redirect
               to={{
-                pathname: "/items"
+                pathname: "/books"
               }}
             />
           )
