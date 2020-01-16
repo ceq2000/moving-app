@@ -7,12 +7,8 @@ const db = require("../models");
 // This file empties the Book and User collections and inserts the seeds below
 // mongoose.connect(
 //   process.env.MONGODB_URI ||
-<<<<<<< HEAD
 //   "mongodb://localhost/moving-app" );
 
-=======
-//   "mongodb://localhost/moving-app"
->>>>>>> oscar-branch
 // Connect to the Mongo DB
 mongoose.connect(process.env.MONGODB_URI, { useNewUrlParser: true, useUnifiedTopology: true, useCreateIndex: true });
 
