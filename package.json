@@ -12,7 +12,6 @@
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
     "heroku-postbuild": "npm run build"
-    
   },
   "author": "David Levens",
   "license": "ISC",
