@@ -1,5 +1,5 @@
 {
-  "name": "mern",
+  "name": "moving-app",
   "version": "1.0.0",
   "description": "",
   "main": "server.js",
@@ -11,7 +11,8 @@
     "seed": "node scripts/seedDB.js",
     "install": "cd client && npm install",
     "build": "cd client && npm run build",
-    "heroku-postbuild": "npm run build && npm run seed"
+    "heroku-postbuild": "npm run build"
+    
   },
   "author": "David Levens",
   "license": "ISC",
@@ -20,15 +21,22 @@
     "nodemon": "^2.0.2"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.26",
+    "@fortawesome/free-solid-svg-icons": "^5.12.0",
+    "@fortawesome/react-fontawesome": "^0.1.8",
     "axios": "^0.19.0",
     "bcryptjs": "^2.4.3",
+    "bootstrap": "^4.4.1",
+    "classnames": "^2.2.6",
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "if-env": "^1.0.4",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.8.3",
+    "node-sass": "^4.13.0",
     "passport": "^0.4.1",
     "passport-jwt": "^4.0.0",
-    "randomstring": "^1.1.5"
+    "randomstring": "^1.1.5",
+    "reactstrap": "^8.2.0"
   }
 }

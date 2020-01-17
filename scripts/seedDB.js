@@ -173,8 +173,13 @@ async function seed() {
   try {
     // clear DB
     await db.Book.remove({});
+<<<<<<< HEAD
     await db.User.remove({}); //phill
     await db.Item.remove({}); //sandbox1
+=======
+    await db.User.remove({});
+    await db.Item.remove({});
+>>>>>>> 4a11b10b7e60453aee7b0e91d35f9c59e76c9db2
 
     // add demo users
     const saltRounds = parseInt(process.env.PASSWORD_SALT_ROUNDS, 10);
