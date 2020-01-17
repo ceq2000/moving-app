@@ -94,7 +94,8 @@ class Books extends Component {
             </Jumbotron>
             {this.state.books.length ? (
               <List>
-                {this.state.books.map(function(book) {
+                {/* () => instead of function() */}
+                {this.state.books.map((book) => {
                   return (
                   <ListItem key={book._id}>
                     <Link to={"/books/" + book._id}>
