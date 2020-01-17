@@ -59,7 +59,7 @@ class Books extends Component {
         <Row>
           <Col size="md-6">
             <Jumbotron>
-              <h1>Lets keep a record of your belongings,</h1>
+              <h1>Lets keep a record of your belongings</h1>
             </Jumbotron>
             <form>
               <Input
@@ -94,7 +94,8 @@ class Books extends Component {
             </Jumbotron>
             {this.state.books.length ? (
               <List>
-                {this.state.books.map(book => (
+                {this.state.books.map(function(book) {
+                  return (
                   <ListItem key={book._id}>
                     <Link to={"/books/" + book._id}>
                       <strong>
@@ -103,7 +104,7 @@ class Books extends Component {
                     </Link>
                     <DeleteBtn onClick={() => this.deleteBook(book._id)} />
                   </ListItem>
-                ))}
+                )})}
               </List>
             ) : (
               <h3>No Results to Display</h3>

@@ -20,8 +20,27 @@ export default {
     // Saves a book to the database
     saveBook: function (bookData) {
         return axiosP.post("/books", bookData);
+    },
+    //–––––––––––––––––––– ITEMS ––––––––––––––––––––––
+    // Gets all items
+    getItems: function () {
+        return axiosP.get("/items");
+    },
+    // Gets the item with the given id
+    getItem: function (id) {
+        return axiosP.get("/items/" + id);
+    },
+    // Deletes the item with the given id
+    deleteItem: function (id) {
+        return axiosP.delete("/items/" + id);
+    },
+    // Saves a book to the database
+    saveItem: function (itemData) {
+        return axiosP.post("/items", itemData);
     }
+
 };
+
 
 const axiosP = axios.create({
     baseURL: '/api/protected'
