@@ -26,19 +26,11 @@ const Login = (props) => {
     >
         <Modal.Header closeButton>
             <Modal.Title id="login-form">
-<<<<<<< HEAD
-                Moving List Login
-        </Modal.Title>
-        </Modal.Header>
-        <Modal.Body>
-            <h5 className="card-title">Login to your Moving Objects list</h5>
-=======
                 Home Inventory Login
         </Modal.Title>
         </Modal.Header>
         <Modal.Body>
             <h5 className="card-title">Login to your homes current inventory</h5>
->>>>>>> 4a11b10b7e60453aee7b0e91d35f9c59e76c9db2
             <Formik
                 initialValues={{ username: '', password: '' }}
                 validationSchema={schema}
