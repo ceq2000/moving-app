@@ -8,7 +8,7 @@ export default function Splash(props) {
             <Row>
                 <Col >
                     <Jumbotron fluid className='mt-4'>
-                        <h1 className='text-center'>Love To Read?</h1>
+                        <h1 className='text-center'>Want To Move?</h1>
                     </Jumbotron>
                     <Row className="text-center">
                         <Col >
@@ -27,7 +27,7 @@ export default function Splash(props) {
                         </Col>
                     </Row>
                     <Jumbotron fluid className='mt-4'>
-                        <h1 className='text-center'>We got you Cover to Cover!</h1>
+                        <h1 className='text-center'>We got you!</h1>
                     </Jumbotron>
                 </Col>
             </Row>

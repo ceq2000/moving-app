@@ -37,11 +37,11 @@ const Signup = (props) => {
     >
         <Modal.Header closeButton>
             <Modal.Title id="signup-form">
-                Reading List Signup
+                Moving List Signup
         </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-            <h5 className="card-title">Signup to create your reading list</h5>
+            <h5 className="card-title">Signup and create your Moving list! ;)</h5>
             <Formik
                 initialValues={{ firstName: '', lastName: '', email: '', username:'', password: '' }}
                 validationSchema={schema}
