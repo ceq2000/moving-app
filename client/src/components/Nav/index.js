@@ -6,8 +6,8 @@ import { Link } from "react-router-dom";
 import { onLogout } from '../../redux/actions'
 // import './App.scss';
 const Nav = (props) => {
-  return   <Navbar className='navbar-expand-lg navbar-dark-success justify-content-left'>
-  <Navbar.Brand href="/">Home Inventory</Navbar.Brand>
+  return   <Navbar className='navbar-expand-lg navbar-success justify-content-right'>
+  <Navbar.Brand className='type' href="/">Home Inventory</Navbar.Brand>
   {
     props.user ?
       <Button onClick={props.onLogout}>Logout</Button> :
