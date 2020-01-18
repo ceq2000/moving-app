@@ -1,16 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
 @import "utilities/App";
 
-.navbar {
-    background-color:#2788ff;	
-    border-radius: $roundbtn;
-    font-family: cursive;
-}
-.btn {
-    background-color:$button-color4;
-    border-color: #22B24C;
-    box-shadow: 20px 20px 20px black;
-    font-family: cursive;
-    border-radius: $roundbtn;
+
+.type {
+    font-family: 'Nanum Pen Script', cursive;
 }
 
 

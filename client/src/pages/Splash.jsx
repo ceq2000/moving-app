@@ -1,11 +1,11 @@
 import React from "react";
-// import './App.scss';
+import './App.scss';
 
 import { Button, Col, Row, Container, Jumbotron } from 'react-bootstrap';
 
 export default function Splash(props) {
     return (
-        <Container>
+        <Container className='container-1'>
             <Row>
                 <Col >
                     <Jumbotron fluid className='mt-4'>
