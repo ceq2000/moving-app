@@ -59,7 +59,7 @@ class Books extends Component {
         <Row>
           <Col size="md-6">
             <Jumbotron>
-              <h1>Lets keep a record of your belongings,</h1>
+              <h1>Lets keep a record of your belongings</h1>
             </Jumbotron>
             <form>
               <Input
