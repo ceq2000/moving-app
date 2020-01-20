@@ -52,7 +52,7 @@ class Items extends Component {
             API.saveItem({
                 name: this.state.name,
                 location: this.state.location,
-                description: this.state.despcrition,
+                description: this.state.description,
                 purchaseDate: this.state.purchaseDate,
                 purchasePrice: this.state.purchasePrice
             })
@@ -67,7 +67,7 @@ class Items extends Component {
                 <Row>
                     <Col size="md-6">
                         <Jumbotron>
-                            <h1>What Books Should I Read?</h1>
+                            <h1>What are you moving?</h1>
                         </Jumbotron>
                         <form>
                             <Input
@@ -98,7 +98,7 @@ class Items extends Component {
                     </Col>
                     <Col size="md-6 sm-12">
                         <Jumbotron>
-                            <h1>Books On My List</h1>
+                            <h1>Item Tracker</h1>
                         </Jumbotron>            
                         {this.state.items && this.state.items.length ? (
                             <List>
