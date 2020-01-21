@@ -64,7 +64,7 @@ class Items extends Component {
 
     render() {
         return (
-            <Container fluid>
+            <Container className="items" fluid>
                 <Row>
                     <Col size="md-6">
                         <Jumbotron>
