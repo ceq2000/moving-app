@@ -4,7 +4,7 @@ import { Button, Col, Form, Modal } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Formik } from 'formik';
 import * as yup from 'yup';
-
+import './App.scss';
 import { onLogin } from '../../redux/actions'
 import API from '../../api'
 import { ServerError } from '../../components/Form';
@@ -87,6 +87,8 @@ const Login = (props) => {
                                         required
                                         name='password'
                                         type="password"
+                                        placeholder="Password"
+
                                         onChange={handleChange}
                                         onBlur={handleBlur}
                                         value={values.password}
