@@ -64,7 +64,7 @@ const SideBar = props => (
       },
       {
         title: "Items",
-        target: "/Detail",        
+        target: "/items",        
       }
     ]
   ]

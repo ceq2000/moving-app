@@ -6,7 +6,7 @@ const Schema = mongoose.Schema;
 const itemSchema = new Schema({
   name: { type: String, required: true },
   location: { type: String, required: true },
-  description: String,
+  description: { type: String },
   purchaseDate: {type: Date},
   purchasePrice: {type: String},
   date: { type: Date, default: Date.now },
