@@ -1,8 +1,5 @@
 import React from "react";
-<<<<<<< HEAD
-=======
 import './App.scss';
->>>>>>> oscar-branch
 
 import { Button, Col, Row, Container, Jumbotron } from 'react-bootstrap';
 
@@ -12,11 +9,7 @@ export default function Splash(props) {
             <Row>
                 <Col >
                     <Jumbotron fluid className='mt-4'>
-<<<<<<< HEAD
                         <h1 className='text-center'>Want to know what you own?</h1>
-=======
-                        <h1 className='text-center'></h1>
->>>>>>> oscar-branch
                     </Jumbotron>
                     <Row className="text-center">
                         <Col >
@@ -35,11 +28,7 @@ export default function Splash(props) {
                         </Col>
                     </Row>
                     <Jumbotron fluid className='mt-4'>
-<<<<<<< HEAD
-                        <h1 className='text-center'>We can help!</h1>
-=======
                         <h1 className='text-center'>Like us on Facebook!</h1>
->>>>>>> oscar-branch
                     </Jumbotron>
                 </Col>
             </Row>
