@@ -28,11 +28,7 @@ export default function Splash(props) {
                         </Col>
                     </Row>
                     <Jumbotron fluid className='mt-4'>
-<<<<<<< HEAD
-                        <h1 className='text-center'>We can help!</h1>
-=======
                         <h1 className='text-center'>Like us on Facebook!</h1>
->>>>>>> 8edc7a43451d86602d36e4e06c347db995a2dd84
                     </Jumbotron>
                 </Col>
             </Row>
