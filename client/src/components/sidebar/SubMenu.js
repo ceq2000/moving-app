@@ -3,10 +3,6 @@ import  { Collapse, NavItem, NavLink } from 'reactstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import classNames from 'classnames';
 import { Link } from 'react-router-dom';
-<<<<<<< HEAD
-
-=======
->>>>>>> master
 const SubMenu = props => {
   
   const [collapsed, setCollapsed] = useState(true)

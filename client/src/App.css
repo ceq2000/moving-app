@@ -9,11 +9,8 @@
 body {
     font-family: 'Poppins', sans-serif;
     background: #fafafa;
-<<<<<<< HEAD
-=======
     border-radius: 20px 20px 20px 20px;
 
->>>>>>> master
 }
 
 
@@ -35,10 +32,7 @@ a:focus {
   color: #fff;
   margin-left: -250px;
   transition: all 0.5s;
-<<<<<<< HEAD
-=======
   border-radius: 20px 20px 20px 20px;
->>>>>>> master
 }
 
 .sidebar.is-open {
@@ -108,10 +102,6 @@ li a.dropdown-toggle::after {
   background: #3A4C99; 
 }
 
-<<<<<<< HEAD
-=======
-
->>>>>>> master
 /* ---------------------------------------------------
     CONTENT STYLE
 ----------------------------------------------------- */

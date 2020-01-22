@@ -4,11 +4,7 @@ import { Button, Col, Form, Modal } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Formik } from 'formik';
 import * as yup from 'yup';
-<<<<<<< HEAD
-// import './App.scss';
-=======
 import './App.scss';
->>>>>>> master
 import { onLogin } from '../../redux/actions'
 import API from '../../api'
 import {ServerError} from '../../components/Form';
