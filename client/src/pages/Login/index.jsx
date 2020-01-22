@@ -4,7 +4,7 @@ import { Button, Col, Form, Modal } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
 import { Formik } from 'formik';
 import * as yup from 'yup';
-
+import './App.scss';
 import { onLogin } from '../../redux/actions'
 import API from '../../api'
 import { ServerError } from '../../components/Form';
@@ -26,11 +26,11 @@ const Login = (props) => {
     >
         <Modal.Header closeButton>
             <Modal.Title id="login-form">
-                Home Inventory Login
+                Inventory List Login
         </Modal.Title>
         </Modal.Header>
         <Modal.Body>
-            <h5 className="card-title">Login to your homes current inventory</h5>
+            <h5 className="card-title">Login to your inventory list</h5>
             <Formik
                 initialValues={{ username: '', password: '' }}
                 validationSchema={schema}
@@ -87,6 +87,8 @@ const Login = (props) => {
                                         required
                                         name='password'
                                         type="password"
+                                        placeholder="Password"
+
                                         onChange={handleChange}
                                         onBlur={handleBlur}
                                         value={values.password}

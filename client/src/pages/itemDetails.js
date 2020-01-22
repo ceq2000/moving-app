@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import Jumbotron from "../components/Jumbotron";
 import API from "../api";
+import './App.scss';
 
 class itemDetails extends Component {
     state = {
@@ -21,7 +22,7 @@ class itemDetails extends Component {
 
     render() {
         return (
-            <Container fluid>
+            <Container className="details" fluid>
                 <Row>
                     <Col size="md-12">
                         <Jumbotron>
@@ -41,7 +42,7 @@ class itemDetails extends Component {
                 </Row>
                 <Row>
                     <Col size="md-2">
-                        <Link to="/">← Back to Items</Link>
+                        <Link to="/">← Back to Inventory</Link>
                     </Col>
                 </Row>
             </Container>

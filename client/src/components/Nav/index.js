@@ -4,23 +4,45 @@ import { Button, Navbar } from 'react-bootstrap';
 import { Link } from "react-router-dom";
 
 import { onLogout } from '../../redux/actions'
-// import './App.scss';
+import { PromiseProvider } from "mongoose";
+import './App.scss';
 const Nav = (props) => {
-  return   <Navbar className='navbar-expand-lg navbar-dark justify-content-left'>
-  <Navbar.Brand href="/">Home Inventory</Navbar.Brand>
-  {
-    props.user ?
-      <Button onClick={props.onLogout}>Logout</Button> :
-      <Link to={"/login"}>
-        <Button className='btn btn-dark-success'>Login</Button>
-      </Link>
-  }
-</Navbar>;
+  
+  return <Navbar className='navbar-expand-lg justify-content-center'>
+    <Navbar.Brand className='type' href="/"> TaliApp</Navbar.Brand>
+   
+    {
+      props.user ?
+        <Button onClick={props.onLogout}>Logout</Button> :
+        <Link to={"/login"}>
+          {/* <Button className='btn btn-light-danger'>Login</Button> */}
+        </Link>
+    }
+  </Navbar>;
 };
 
 export default connect(
-  // mapStateToProps
-  state => ({user: state.user.details}),
-  // mapDispatchToProps
+  // mapStateToProps,
+  state => ({user: state.user.details }),
+  // mapDispatchToProps,
   { onLogout }
 )(Nav);
+// const Nav = (props) => {
+//   return   <Navbar className='navbar-expand-lg justify-content-right'>
+//   <Navbar.Brand className='type' href="/">Home Inventory</Navbar.Brand>
+//   {
+//     props.user ?
+//       <Button onClick={props.onLogout}>Logout</Button> :
+//       <Link to={"/login"}>
+//         <Button className='btn btn-dark-success'>Login</Button>
+//       </Link>
+//   }
+// </Navbar>;
+// };
+
+// export default connect(
+//   // mapStateToProps
+//   state => ({user: state.user.details}),
+//   // mapDispatchToProps
+//   { onLogout }
+// )(Nav);

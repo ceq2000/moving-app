@@ -6,6 +6,7 @@ import { Link } from "react-router-dom";
 import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
+import './App.scss';
 
 class Items extends Component {
     state = {
@@ -63,7 +64,7 @@ class Items extends Component {
 
     render() {
         return (
-            <Container fluid>
+            <Container className="items" fluid>
                 <Row>
                     <Col size="md-6">
                         <Jumbotron>
