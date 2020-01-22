@@ -42,7 +42,11 @@ class itemDetails extends Component {
                 </Row>
                 <Row>
                     <Col size="md-2">
+<<<<<<< HEAD
                         <Link to="/">← Back to Items</Link>
+=======
+                        <Link to="/">← Back to Inventory</Link>
+>>>>>>> 8edc7a43451d86602d36e4e06c347db995a2dd84
                     </Col>
                 </Row>
             </Container>
