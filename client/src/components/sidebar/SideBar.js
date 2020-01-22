@@ -13,7 +13,7 @@ const SideBar = props => (
         <h3>Inventory List</h3>
       </div>
       <div className="side-menu">
-        <Nav vertical className="list-unstyled pb-3">
+        <Nav vertical className="list-styled pb-3">
           <p>Dashboard</p>
           <SubMenu title="Home" icon={faHome} items={submenus[0]}/>
           <NavItem>
@@ -45,21 +45,14 @@ const SideBar = props => (
   const submenus = [
     [
       {
-        title: "Home 1",
+        title: "Your home",
         target: "Home-1"
       },
-      {
-        title: "Home 2",
-        target: "Home-2",        
-      },
-      {
-        itle: "Home 3",
-        target: "Home-3",      
-      }
+      
     ],
     [
       {
-        title: "Books",
+        title: "rooms",
         target: "/books",          
       },
       {

@@ -6,4 +6,27 @@ $button-border-color: #22B24C;
 $background-color1: #2788ff;
 $background-color2: #27f4ff;
 $font1: 'Homemade Apple', cursive;
+$smallshadow: ' 5px 5px 5px gray;';
+$mediumshadow: ' 10x 10px 10px gray;';
+$largeshadow: ' 20px 20px 20px gray;';
+$text-shadow: "5px 5px 5px gray;";
+$roundbtn: '10px 10px 10px;';
+$pulledbtn: '50px 10px';
 
+
+input{
+    font-family: 'Nanum Pen Script', cursive;
+    justify-content: right;
+}
+TextArea {
+    font-family: 'Nanum Pen Script', cursive;
+
+}
+.details {
+    font-family: 'Nanum Pen Script', cursive;
+
+}
+.detailstwo {
+    font-family: 'Nanum Pen Script', cursive;
+
+}
