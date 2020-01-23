@@ -10,11 +10,15 @@ const SideBar = props => (
   <div className={classNames('sidebar', { 'is-open': props.isOpen })}>
     <div className="sidebar-header">
       <span color="info" onClick={props.toggle} style={{ color: '#fff' }}>&times;</span>
-      <h3>Inventory List</h3>
+      <h3>TALIAPP</h3>
+
+      <a class="btn btn-primary" href="/login" role="button">Logout</a>
+
+
+
     </div>
     <div className="side-menu">
       <Nav vertical className="list-styled pb-3">
-        <p>Dashboard</p>
         <SubMenu title="Home" icon={faHome} items={submenus[0]} />
         <NavItem>
           <NavLink tag={Link} to={'/about'}>

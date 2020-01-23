@@ -9,7 +9,7 @@ import './App.scss';
 const Nav = (props) => {
   
   return <Navbar className='navbar-expand-lg justify-content-center'>
-    <Navbar.Brand className='type' href="/"> TaliApp</Navbar.Brand>
+    <Navbar.Brand className='type' href="/"> TALIAPP</Navbar.Brand>
    
     {
       props.user ?
