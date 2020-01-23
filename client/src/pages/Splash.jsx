@@ -9,7 +9,7 @@ export default function Splash(props) {
             <Row>
                 <Col >
                     <Jumbotron fluid className='mt-4'>
-                        <h1 className='text-center'></h1>
+                        <h1 className='text-center'>Hello world</h1>
                     </Jumbotron>
                     <Row className="text-center">
                         <Col >
