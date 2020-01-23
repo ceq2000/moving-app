@@ -16,7 +16,7 @@ class Items extends Component {
         description: "",
         purchaseDate: "",
         purchasePrice: "",
-        
+
     };
 
     componentDidMount() {
@@ -66,9 +66,10 @@ class Items extends Component {
         return (
             <Container className="items" fluid>
                 <Row>
-                    <Col size="md-6">
+                    <Col size="md-8">
                         <Jumbotron>
                             <h1>What are you moving?</h1>
+                            <h4>Use this form to add items to your home inventory list.</h4>
                         </Jumbotron>
                         <form>
                             <Input
@@ -92,15 +93,18 @@ class Items extends Component {
                             <FormBtn
                                 disabled={!(this.state.name && this.state.location)}
                                 onClick={this.handleFormSubmit}
-                            >
-                                Add Item
-              </FormBtn>
+                            >Add Item
+                            </FormBtn>
                         </form>
                     </Col>
-                    <Col size="md-6 sm-12">
+                </Row>
+
+                <row>
+                    <Col size="md-8 sm-12">
                         <Jumbotron>
-                            <h1>Item Tracker</h1>
-                        </Jumbotron>            
+                            <h1>My Home Inventory List</h1>
+                            <h4>Click on a list item below for item details.</h4>
+                        </Jumbotron>
                         {this.state.items && this.state.items.length ? (
                             <List>
                                 {this.state.items.map(item => (
@@ -118,8 +122,9 @@ class Items extends Component {
                                 <h3>No Results to Display</h3>
                             )}
                     </Col>
-                </Row>
+                </row>
             </Container>
+
         );
     }
 }

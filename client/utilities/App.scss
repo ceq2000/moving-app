@@ -2,31 +2,29 @@ $button-color1: #2788ff;
 $button-color2: #ff9e27;
 $button-color3: #88ff27;
 $button-color4: #9e27ff;
-$button-border-color: #22B24C;    
+$button-border-color: #22b24c;
 $background-color1: #2788ff;
 $background-color2: #27f4ff;
-$font1: 'Homemade Apple', cursive;
-$smallshadow: ' 5px 5px 5px gray;';
-$mediumshadow: ' 10x 10px 10px gray;';
-$largeshadow: ' 20px 20px 20px gray;';
+$font1: "Homemade Apple", cursive;
+$smallshadow: " 5px 5px 5px gray;";
+$mediumshadow: " 10x 10px 10px gray;";
+$largeshadow: " 20px 20px 20px gray;";
 $text-shadow: "5px 5px 5px gray;";
-$roundbtn: '10px 10px 10px;';
-$pulledbtn: '50px 10px';
+$roundbtn: "10px 10px 10px;";
+$pulledbtn: "50px 10px";
 
-
-input{
-    font-family: 'Nanum Pen Script', cursive;
-    justify-content: right;
+input {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  justify-content: right;
 }
-TextArea {
-    font-family: 'Nanum Pen Script', cursive;
-
+textarea {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .details {
-    font-family: 'Nanum Pen Script', cursive;
-
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 .detailstwo {
-    font-family: 'Nanum Pen Script', cursive;
-
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
+
+// "Nanum Pen Script", cursive;

@@ -4,8 +4,8 @@ import './App.scss';
 function Jumbotron({ children }) {
   return (
 
-   
-    <div style={{ height: 300, clear: "none", paddingTop: 120, textAlign: "center" }}
+
+    <div style={{ height: 200, clear: "none", paddingTop: 60, textAlign: "center" }}
       className="jumbotron"
     >
       {children}

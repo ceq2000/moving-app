@@ -1,5 +1,5 @@
 import React from "react";
-import {Alert} from 'react-bootstrap';
+import { Alert } from 'react-bootstrap';
 import './App.scss';
 // @import "./variables.scss";
 
@@ -18,7 +18,7 @@ export function TextArea(props) {
   return (
     <div className="form-group">
       <textarea className="form-control" rows="5" {...props} />
-      
+
 
     </div>
   );
@@ -26,18 +26,18 @@ export function TextArea(props) {
 
 export function FormBtn(props) {
   return (
-    <button {...props} style={{ float: "right", marginBottom: 10 }} className="btn btn-success">
+    <button {...props} style={{ float: "right", marginBottom: 10 }} className="btn btn-primary btn-lg">
       {props.children}
     </button>
   );
 }
 
 export function ServerError(props) {
-  const {axiosError} = props;
+  const { axiosError } = props;
 
   if (!axiosError || !axiosError.response) return null;
 
-  const {statusText, status} = axiosError.response;
+  const { statusText, status } = axiosError.response;
   let errorObj;
 
   if (axiosError.response.data.error) {
@@ -49,10 +49,10 @@ export function ServerError(props) {
 
 
   return (
-<Alert variant='danger'>
-    {status} {statusText}<br />
-    Error Name: {errorObj.name}<br />
-    Error Message: {errorObj.message}
-  </Alert>
+    <Alert variant='danger'>
+      {status} {statusText}<br />
+      Error Name: {errorObj.name}<br />
+      Error Message: {errorObj.message}
+    </Alert>
   );
 }
