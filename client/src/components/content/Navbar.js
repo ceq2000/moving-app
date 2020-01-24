@@ -3,7 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faAlignLeft } from '@fortawesome/free-solid-svg-icons';
 import { Navbar, Button, NavbarToggler, Collapse, Nav, NavItem, NavLink } from 'reactstrap';
 import { Link } from 'react-router-dom';
-// import './App.scss';
+import './App.scss';
 
 export default props => {
 
@@ -13,7 +13,7 @@ export default props => {
   return (
     <div className="subheader">
       <h4>
-        Use this form to add items to your homes inventory
+                Use this form to add items to your homes inventory
       </h4>
     </div>
     // <Navbar color="light" light className="navbar shadow-sm p-3 mb-5 bg-white rounded" expand="md">
