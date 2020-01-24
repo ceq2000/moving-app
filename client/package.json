@@ -5,6 +5,7 @@
   "proxy": "http://localhost:3001/",
   "dependencies": {
     "axios": "^0.19.0",
+    "bootstrap": "^4.4.1",
     "formik": "^2.0.8",
     "jwt-jot": "^1.2.3",
     "react": "^16.12.0",

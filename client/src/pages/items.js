@@ -8,6 +8,9 @@ import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
 import './App.scss';
 
+import { ButtonToolbar, DropdownButton, Dropdown } from 'react-bootstrap';
+
+
 class Items extends Component {
     state = {
         // MUST MATCH "itemSeed" OBJECT IN "seedDB.js" file 
@@ -16,7 +19,7 @@ class Items extends Component {
         description: "",
         purchaseDate: "",
         purchasePrice: "",
-        
+
     };
 
     componentDidMount() {
@@ -54,6 +57,7 @@ class Items extends Component {
                 name: this.state.name,
                 location: this.state.location,
                 description: this.state.description,
+                modelNumber: this.state.modelNumber,
                 purchaseDate: this.state.purchaseDate,
                 purchasePrice: this.state.purchasePrice
             })
@@ -71,6 +75,28 @@ class Items extends Component {
                             <h1>What are you moving?</h1>
                         </Jumbotron>
                         <form>
+                            {/* onclick this.setState of location to >>>>  */}
+                            <ButtonToolbar>
+                                {['Primary', 'Secondary', 'Success', 'Info', 'Warning', 'Danger'].map(
+                                    variant => (
+                                        <DropdownButton
+                                            title={variant}
+                                            variant={variant.toLowerCase()}
+                                            id={`dropdown-variants-${variant}`}
+                                            key={variant}
+                                        >
+                                            <Dropdown.Item eventKey="1">Action</Dropdown.Item>
+                                            <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
+                                            <Dropdown.Item eventKey="3" active>
+                                                Active Item
+                                             </Dropdown.Item>
+                                            <Dropdown.Divider />
+                                            <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
+                                        </DropdownButton>
+                                    ),
+                                )}
+                            </ButtonToolbar>
+                            
                             <Input
                                 value={this.state.name}
                                 onChange={this.handleInputChange}
@@ -82,6 +108,12 @@ class Items extends Component {
                                 onChange={this.handleInputChange}
                                 name="location"
                                 placeholder="Location (required)"
+                            />
+                            <Input
+                                value={this.state.modelNumber}
+                                onChange={this.handleInputChange}
+                                name="modelNumber"
+                                placeholder="Model or Serial Number (required)"
                             />
                             <TextArea
                                 value={this.state.description}
@@ -100,7 +132,7 @@ class Items extends Component {
                     <Col size="md-6 sm-12">
                         <Jumbotron>
                             <h1>Item Tracker</h1>
-                        </Jumbotron>            
+                        </Jumbotron>
                         {this.state.items && this.state.items.length ? (
                             <List>
                                 {this.state.items.map(item => (

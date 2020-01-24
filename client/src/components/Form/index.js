@@ -1,5 +1,5 @@
 import React from "react";
-import {Alert} from 'react-bootstrap';
+import { Alert } from 'react-bootstrap';
 import './App.scss';
 // @import "./variables.scss";
 
@@ -18,11 +18,26 @@ export function TextArea(props) {
   return (
     <div className="form-group">
       <textarea className="form-control" rows="5" {...props} />
-      
+
 
     </div>
   );
 }
+
+// newRoom()
+//   let rooms = [];
+//   for (let i = 0; i <= this.props.maxValue; i++) {
+//     rooms.push(<option key={i} value={i}>{i}</option>);
+//     //here I will be creating my options dynamically based on
+//     //what props are currently passed to the parent component
+//   }
+//   return rooms;
+
+
+// export function onDropdownSelected(e) {
+//   console.log("THE VAL", e.target.value);
+//   //here you will see the current selected value of the select input
+// }
 
 export function FormBtn(props) {
   return (
@@ -33,11 +48,11 @@ export function FormBtn(props) {
 }
 
 export function ServerError(props) {
-  const {axiosError} = props;
+  const { axiosError } = props;
 
   if (!axiosError || !axiosError.response) return null;
 
-  const {statusText, status} = axiosError.response;
+  const { statusText, status } = axiosError.response;
   let errorObj;
 
   if (axiosError.response.data.error) {
@@ -49,10 +64,10 @@ export function ServerError(props) {
 
 
   return (
-<Alert variant='danger'>
-    {status} {statusText}<br />
-    Error Name: {errorObj.name}<br />
-    Error Message: {errorObj.message}
-  </Alert>
+    <Alert variant='danger'>
+      {status} {statusText}<br />
+      Error Name: {errorObj.name}<br />
+      Error Message: {errorObj.message}
+    </Alert>
   );
 }
