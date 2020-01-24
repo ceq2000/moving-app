@@ -42,7 +42,9 @@ class itemDetails extends Component {
                 </Row>
                 <Row>
                     <Col size="md-2">
+                        <button>
                         <Link to="/">← Back to Inventory</Link>
+                        </button>
                     </Col>
                 </Row>
             </Container>

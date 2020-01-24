@@ -99,9 +99,9 @@ class Books extends Component {
                   return (
                   <ListItem key={book._id}>
                     <Link to={"/books/" + book._id}>
-                      <strong>
+                      
                         {book.title} made by {book.author}
-                      </strong>
+                      
                     </Link>
                     <DeleteBtn onClick={() => this.deleteBook(book._id)} />
                   </ListItem>
