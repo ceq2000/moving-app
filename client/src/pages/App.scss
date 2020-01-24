@@ -1,3 +1,6 @@
+@import "utilities/App";
+@import url('https://fonts.googleapis.com/css?family=Catamaran|Handlee&display=swap');
+
 .details {
     font-family: cursive;
     background-color: red;
@@ -36,4 +39,7 @@ border-color: #2788ff;
         // font-family: 'Nanum Pen Script', cursive;
         font-family: 'Handlee', cursive;
     
+}
+.sidebar-header {
+    font-family: cursive;
 }

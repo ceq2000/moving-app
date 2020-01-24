@@ -1,14 +1,15 @@
 @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:regular,bold,italic&subset=latin,latin-ext');
-// @import "utilities/App";
+@import "utilities/App";
 // @import LogoImage from './images/logo.png';
 // @import logo from ('./clint/images/logo.png')
 .type {
-    font-family: 'roboto';
+    background-image: image('images/logo.png');
+    font-family: 'Catamaran';
     font-size: 44px;
 }
 .navbar-expand-lg {
     // background-color: purple;
-    background-image: 'images/logo.png';
+    // background-image: 'images/logo.png';
 // background-image: url(${logo});
   height: 200px;
 }
