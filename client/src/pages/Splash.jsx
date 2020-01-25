@@ -15,14 +15,14 @@ export default function Splash(props) {
                         <Col >
                             <Button 
                             type="submit" 
-                            className="btn btn-primary" 
+                            className="btn btn-success" 
                             onClick={() => props.history.push('/signup')}
                             >Signup</Button>
                         </Col>
                         <Col >
                             <Button 
                             type="submit" 
-                            className="btn btn-primary"
+                            className="btn btn-success"
                             onClick={() => props.history.push('/login')}
                             >Login</Button>
                         </Col>
