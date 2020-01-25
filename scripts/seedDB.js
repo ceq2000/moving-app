@@ -184,6 +184,7 @@ const roomSeed = [
     year: "year purchased",
     description: "description"
   },
+  
 ];
 async function seed() {
   try {

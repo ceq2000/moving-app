@@ -3,15 +3,16 @@
 // @import LogoImage from './images/logo.png';
 // @import logo from ('./clint/images/logo.png')
 .type {
-    background-image: image('images/logo.png');
+    // background-image: url("/images/logo.png");
     font-family: 'Catamaran';
     font-size: 44px;
 }
-.navbar-expand-lg {
+.navbar {
     // background-color: purple;
-    // background-image: 'images/logo.png';
+    background-image: url("/images/logo.png");
+
 // background-image: url(${logo});
-  height: 200px;
+height: 200px;
 }
 
 
