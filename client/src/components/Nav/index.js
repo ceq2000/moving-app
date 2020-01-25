@@ -10,6 +10,7 @@ import { onLogout } from '../../redux/actions'
 const Nav = (props) => {
   return   <Navbar className='navbar-expand-lg justify-content-between'>
   <Navbar.Brand className="type" href="/">Talli-Home</Navbar.Brand>
+  <div container="navlink">
   <Navbar className="ml-auto" navbar>
           <NavItem>
             <NavLink tag={Link} to={'/page-1'}>Home</NavLink>
@@ -24,6 +25,7 @@ const Nav = (props) => {
             <NavLink tag={Link} to={'/page-4'}>Contact</NavLink>
           </NavItem>
        </Navbar>
+       </div>
   {
     props.user ?
       <Button onClick={props.onLogout}>Logout</Button> :
