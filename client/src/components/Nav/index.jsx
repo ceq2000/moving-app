@@ -8,9 +8,8 @@ import './App.scss';
 import { onLogout } from '../../redux/actions'
 
 const Nav = (props) => {
-  return   <Navbar className='navbar-expand-lg justify-content-between'>
-  <Navbar.Brand className="type" href="/">Talli-Home</Navbar.Brand>
-  <div container="navlink">
+  return <Navbar className='navbar-expand-lg justify-content-between'>
+   <div container="navlink">
   <Navbar className="ml-auto" navbar>
           <NavItem>
             <NavLink tag={Link} to={'/page-1'}>Home</NavLink>
@@ -26,19 +25,21 @@ const Nav = (props) => {
           </NavItem>
        </Navbar>
        </div>
-  {
-    props.user ?
-      <Button onClick={props.onLogout}>Logout</Button> :
-      <Link to={"/login"}>
-        <Button>Login</Button>
-      </Link>
-  }
-</Navbar>;
+    <Navbar.Brand className="type" href="/"><img src="./images/logo.png" alt="TalliHome Logo"></img> </Navbar.Brand>
+
+    {
+      props.user ?
+        <Button onClick={props.onLogout}>Logout</Button> :
+        <Link to={"/login"}>
+          <Button>Login</Button>
+        </Link>
+    }
+  </Navbar>;
 };
 
 export default connect(
   // mapStateToProps
-  state => ({user: state.user.details}),
+  state => ({ user: state.user.details }),
   // mapDispatchToProps
   { onLogout }
 )(Nav);
