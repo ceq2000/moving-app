@@ -9,7 +9,11 @@ export default function Splash(props) {
             <Row>
                 <Col >
                     <Jumbotron fluid className='mt-4'>
+<<<<<<< HEAD
                         <h1 className='text-center'>Want to know what you own?</h1>
+=======
+                        <h1 className='text-center'>Hello world</h1>
+>>>>>>> oscar-branch
                     </Jumbotron>
                     <Row className="text-center">
                         <Col >

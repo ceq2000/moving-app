@@ -1,5 +1,15 @@
 @import "utilities/App";
+@import url('https://fonts.googleapis.com/css?family=Catamaran|Handlee&display=swap');
 
-.form-group {
+.form-control {
     color: rgb(0, 17, 255);
+    font-family: Handlee;
+    font-size: 34px;
+
+}
+.btn {
+    font-family: Catamaran;
+}
+.form-group {
+    font-family: Catamaran;
 }

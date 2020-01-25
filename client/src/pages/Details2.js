@@ -5,29 +5,24 @@ import Jumbotron from "../components/Jumbotron";
 import API from "../api";
 import './App.scss';
 
-class itemDetails extends Component {
+class Room extends Component {
     state = {
-        item: {}
+        room: {}
     };
-    // Add code to get the item with an _id equal to the id in the route param
-    // e.g. http://localhost:3000/books/:id
-    // The item id for this route can be accessed using this.props.match.params.id
-
-    componentDidMount() {
-        API.getItem(this.props.match.params.id)
-            .then(res => {
-                this.setState({ item: res.data })
-            });
+    componentDidMount () {
+        API.getRoom(this.props.match.params.id)
+        .then(res => {
+            this.setState.length({room: res.data})
+        });
     }
-
     render() {
-        return (
-            <Container className="details" fluid>
+        return ( 
+            <Container fluid className="room-detail">
                 <Row>
                     <Col size="md-12">
                         <Jumbotron>
                             <h1>
-                                {this.state.item.name} in {this.state.item.location}
+                                {this.state.room.title} by { this.state.room.year}
                             </h1>
                         </Jumbotron>
                     </Col>
@@ -35,15 +30,15 @@ class itemDetails extends Component {
                 <Row>
                     <Col size="md-10 md-offset-1">
                         <article>
-                            <h1>Description</h1>
-                            <p>{this.state.item.description}</p>
+                            <h1>description</h1>
                         </article>
                     </Col>
                 </Row>
                 <Row>
                     <Col size="md-2">
-                        <button>
-                        <Link to="/">← Back to Inventory</Link>
+                        <button type="submit"
+                        className="btn btn-success">
+                            <Link to="/">Back to Homes </Link>
                         </button>
                     </Col>
                 </Row>
@@ -52,4 +47,4 @@ class itemDetails extends Component {
     }
 }
 
-export default itemDetails;
+export default Room;
