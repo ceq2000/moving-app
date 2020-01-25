@@ -19,17 +19,22 @@ class StorageBtn extends React.Component {
 
     uploadFile = (event) => {
         //Get file
-        var file = e.target.files[0];
+        var file = event.target.files[0];
+        console.log(file);
         //Create storage ref
-        var storageRef = firebase.storage().ref('item_pics/' + file.name)
-        //Upload file
+        var storageRef = storage.ref('item_pics/' + file.name)
+        console.log(storageRef)
+        //Upload file - question: what do we do with task?
         var task = storageRef.put(file);
+        const URL= storageRef.getDownloadURL()
+        return URL
     }
 
     render() {
 
         return (
             <div>
+                //confirm input type
                 <input type="file" onChange={(event) => this.uploadFile(event)}></input>
             </div>
         )
@@ -37,27 +42,27 @@ class StorageBtn extends React.Component {
 }
 
 //Get elements
-var uploader = document.getElementbyID('uploader');
-var fileButton = document.getElementById('fileButton');
+// var uploader = document.getElementbyID('uploader');
+// var fileButton = document.getElementById('fileButton');
 
-//Listen for file selection
-fileButton.addEventListener(change, function (e) {
+// //Listen for file selection
+// fileButton.addEventListener(change, function (e) {
 
-    //Update progress bar
-    task.on('state_changed', function progress(snapshot) {
-        var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
-        uploader.value = percentage;
+//     //Update progress bar
+//     task.on('state_changed', function progress(snapshot) {
+//         var percentage = (snapshot.bytesTransferred / snapshot.totalBytes) * 100;
+//         uploader.value = percentage;
 
-    },
-        function error(err) {
+//     },
+//         function error(err) {
 
-        },
+//         },
 
-        function complete() {
+//         function complete() {
 
-        },
+//         },
 
-    );
-});
+//     );
+// });
 
 export default StorageBtn;

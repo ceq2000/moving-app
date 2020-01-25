@@ -48,8 +48,9 @@ const itemSchema = new Schema({
   purchaseDate: { type: Date, required: true },
   purchasePrice: { type: String, required: true },
   purchaseLocation: { type: String, required: true },
+  uploadImage: { type: String, required: false },
   user: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-  date: new Date(Date.now())
+  date: { type: Schema.Types.Date, required: true }
 });
 
 const Item = mongoose.model("Item", itemSchema);

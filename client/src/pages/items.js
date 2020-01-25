@@ -7,6 +7,7 @@ import { Col, Row, Container } from "../components/Grid";
 import { List, ListItem } from "../components/List";
 import { Input, TextArea, FormBtn } from "../components/Form";
 import './App.scss';
+import StorageBtn from '../components/StorageBtn';
 
 import { ButtonToolbar, DropdownButton, Dropdown } from 'react-bootstrap';
 
@@ -96,7 +97,7 @@ class Items extends Component {
                                     ),
                                 )}
                             </ButtonToolbar>
-                            
+
                             <Input
                                 value={this.state.name}
                                 onChange={this.handleInputChange}
@@ -114,6 +115,8 @@ class Items extends Component {
                                 onChange={this.handleInputChange}
                                 name="modelNumber"
                                 placeholder="Model or Serial Number (required)"
+                            />
+                            <StorageBtn
                             />
                             <TextArea
                                 value={this.state.description}
