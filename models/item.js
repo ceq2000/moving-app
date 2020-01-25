@@ -5,10 +5,13 @@ const Schema = mongoose.Schema;
 
 const itemSchema = new Schema({
   name: { type: String, required: true },
+  rooms: { type: Array, required: true },
   location: { type: String, required: true },
-  description: { type: String },
+  modelNumber: { type: String, required: false },
   purchaseDate: {type: Date},
   purchasePrice: {type: String},
+  purchaseLocation: {type: Date},
+  description: { type: String },
   date: { type: Date, default: Date.now },
   user: { type: Schema.Types.ObjectId, ref: 'User', required: true}
 });
