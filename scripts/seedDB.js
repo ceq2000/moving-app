@@ -34,19 +34,25 @@ const demoUserSeed = [
 const itemSeed = [
   {
     name: "Samsung TV",
+    rooms: "Master Bedroom",
     location: "Living Room",
-    description: "Smart TV, 34 inches",
+    modelNumber: "SCS4325476",
     purchaseDate: "09/27/18",
     purchasePrice: "$450",
+    purchaseLocation: "Best Buy",
+    description: "Smart TV, 34 inches",
     date: new Date(Date.now())
   },
 
   {
-    name: "Samsung TV",
+    name: "Vynil Record Player",
+    rooms: "Kitchen",
     location: "Living Room",
-    description: "Smart TV, 34 inches",
-    purchaseDate: "09/27/18",
-    purchasePrice: "$450",
+    modelNumber: "ATS4456290",
+    purchaseDate: "03/05/19",
+    purchasePrice: "$200",
+    purchaseLocation: "Amazon",
+    description: "Brand:AudioTechnica - Color:White",
     date: new Date(Date.now())
   }
 
