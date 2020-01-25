@@ -1,14 +1,14 @@
-import React, { useState } from 'react';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faAlignLeft } from '@fortawesome/free-solid-svg-icons';
-import { Navbar, Button, NavbarToggler, Collapse, Nav, NavItem, NavLink } from 'reactstrap';
-import { Link } from 'react-router-dom';
-import './App.scss';
+import React from 'react';
+// import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+// import { faAlignLeft } from '@fortawesome/free-solid-svg-icons';
+// import { Navbar, Button, NavbarToggler, Collapse, Nav, NavItem, NavLink } from 'reactstrap';
+// import { Link } from 'react-router-dom';
+// import './App.scss';
 
 export default props => {
 
-  const [isOpen, setOpen] = useState(true)
-  const toggle = () => setOpen(!isOpen)
+  // const [isOpen, setOpen] = useState(true)
+  // const toggle = () => setOpen(!isOpen)
   
   return (
     <div className="subheader">

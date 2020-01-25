@@ -1,5 +1,21 @@
 @import "utilities/App";
+@import url('https://fonts.googleapis.com/css?family=Catamaran|Handlee&display=swap');
 
 .jumbotron {
-    // font-family: 'Nanum Pen Script', cursive;
+    font-family: 'catamaran';
+    background-image: url({LogoImage});
+}
+h1 {
+    font-family: Catamaran;
+}
+.list-group-item {
+    font-family: Handlee;
+    font-size: 24px;
+}
+.form-control {
+    font-family: Handlee;
+    font-size: 24px;
+}
+.form-group {
+    font-family: Catamaran;
 }

@@ -42,7 +42,10 @@ class Detail extends Component {
         </Row>
         <Row>
           <Col size="md-2">
+            <button type="submit" 
+                            className="btn btn-success">
             <Link to="/">← Back to Authors</Link>
+            </button>
           </Col>
         </Row>
       </Container>

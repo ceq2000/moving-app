@@ -1,4 +1,9 @@
-h4 {
-    text-align: center;
-    padding-bottom: 35px;
+@import "utilities/App";
+@import url('https://fonts.googleapis.com/css?family=Catamaran|Handlee&display=swap');
+
+.subheader, p {
+    font-family: Catamaran;
+}
+button {
+    font-family: Catamaran;
 }

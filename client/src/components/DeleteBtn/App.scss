@@ -1,4 +1,6 @@
 @import "utilities/App";
+@import url('https://fonts.googleapis.com/css?family=Catamaran|Handlee&display=swap');
+
 .delete-btn {
   float: right;
   background-color: red;
@@ -6,4 +8,5 @@
   color: white;
   height: auto;
   width: auto;
+  font-family: catamaran;
 }

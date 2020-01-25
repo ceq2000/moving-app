@@ -58,12 +58,31 @@ const itemSeed = [
 
 ];
 
+// rooms seed for new route
+
+const roomSeed = [
+  {
+    title: "LG TV",
+    year: "year purchased",
+    description: "description"
+    
+  },
+
+  {
+    title: "Panasonic TV",
+    year: "year purchased",
+    description: "description"
+  },
+  
+];
 async function seed() {
   try {
     // clear DB
     await db.Book.remove({});
     await db.User.remove({});
     await db.Item.remove({});
+    await db.Room.remove({});
+
 
     // add demo users
     const saltRounds = parseInt(process.env.PASSWORD_SALT_ROUNDS, 10);
@@ -89,6 +108,9 @@ async function seed() {
     const itemSeedOp = await db.Item.collection.insertMany(itemSeed);
     console.log(`Inserted ${itemSeedOp.result.n} items.`);
 
+      // add rooms to DB // ––––––––––––––––––––––––––––––––––––––––––––––––
+    const roomSeedOp = await db.Room.collection.insertMany(roomSeed);
+    console.log(`Inserted ${roomSeedOp.result.n} room.`);
     process.exit(0);
 
   } catch (error) {
