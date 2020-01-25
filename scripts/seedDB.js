@@ -219,7 +219,7 @@ async function seed() {
     console.log(`Inserted ${itemSeedOp.result.n} items.`);
 
       // add rooms to DB // ––––––––––––––––––––––––––––––––––––––––––––––––
-    const roomSeedOp = await db.room.collection.insertMany(roomSeed);
+    const roomSeedOp = await db.Room.collection.insertMany(roomSeed);
     console.log(`Inserted ${roomSeedOp.result.n} room.`);
     process.exit(0);
 
