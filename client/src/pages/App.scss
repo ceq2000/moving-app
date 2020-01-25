@@ -1,10 +1,7 @@
 @import "utilities/App";
 @import url('https://fonts.googleapis.com/css?family=Catamaran|Handlee&display=swap');
 
-.details {
-    font-family: cursive;
-    background-color: red;
-}
+
 .form-control{
     font-size: 20px;
     // font-family: 'Nanum Pen Script', cursive;
@@ -42,4 +39,8 @@ border-color: #2788ff;
 }
 .sidebar-header {
     font-family: cursive;
+}
+.btn btn-success {
+    font-family: Catamaran;
+    color: Yellow;
 }

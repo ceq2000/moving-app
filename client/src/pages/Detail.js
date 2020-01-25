@@ -43,7 +43,7 @@ class Detail extends Component {
         <Row>
           <Col size="md-2">
             <button type="submit" 
-                            className="btn btn-success">
+                            className="btn btn-danger">
             <Link to="/">← Back to Authors</Link>
             </button>
           </Col>
