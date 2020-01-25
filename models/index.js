@@ -2,5 +2,6 @@ module.exports = {
   Book: require("./book"),
   Token: require("./token"),
   User: require("./user"),
-  Item: require("./item")
+  Item: require("./item"),
+  Rooms: require("./rooms")
 };
