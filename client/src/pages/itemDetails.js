@@ -35,8 +35,14 @@ class itemDetails extends Component {
                 <Row>
                     <Col size="md-10 md-offset-1">
                         <article>
-                            <h1>Description</h1>
-                            <p>{this.state.item.description}</p>
+                            <h2>Details</h2>
+                            <h4>Item : {this.state.item.name}</h4>
+                            <h4>Location : {this.state.item.location}</h4>
+                            <h4>Model Number : {this.state.item.modelNumber}</h4>
+                            <h4>Purchase Date : {this.state.item.purchaseDate}</h4>
+                            <h4>Purchase Price : {this.state.item.purchasePrice}</h4>
+                            <h4>Purchase Location : {this.state.item.purchaseLocation}</h4>
+                            <h4>Description : {this.state.item.description}</h4>
                         </article>
                     </Col>
                 </Row>
