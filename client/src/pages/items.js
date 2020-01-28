@@ -14,7 +14,7 @@ class Items extends Component {
     state = {
         // MUST MATCH "itemSeed" OBJECT IN "seedDB.js" file 
         name: [],
-        rooms: ["Kitchen", "Garage", "Master Bedroom", "Living Room", "Suite", "Bathroom"],
+        rooms: [],
         location: "",
         modelNumber: "",
         purchaseDate: "",
@@ -84,13 +84,6 @@ class Items extends Component {
                             <h1>What are you moving?</h1>
                         </Jumbotron>
                         <form>
-                            <Form.Group controlId="exampleForm.ControlSelect1">
-                                <Form.Control as="select">
-                                    <option id='0'>Where is it in the House?</option>
-                                    {this.state.rooms.map((room) => 
-                                    <option key={room} value={room}>{room}</option>)}
-                                </Form.Control>
-                            </Form.Group>
 
                             <Input
                                 value={this.state.name}
@@ -152,7 +145,7 @@ class Items extends Component {
                                     <ListItem key={item._id}>
                                         <Link to={"/items/" + item._id}>
                                             <strong>
-                                                {item.name} in {this.state.rooms}
+                                                {item.name} in {item.location}
                                             </strong>
                                         </Link>
                                         <DeleteBtn onClick={() => this.deleteItem(item._id)} />
