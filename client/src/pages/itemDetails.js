@@ -27,7 +27,10 @@ class itemDetails extends Component {
                     <Col size="md-12">
                         <Jumbotron>
                             <h1>
-                                {this.state.item.name} in {this.state.item.location}
+                                {this.state.item.name}
+                                <br/> in
+                                <br/> 
+                                {this.state.item.location}
                             </h1>
                         </Jumbotron>
                     </Col>
