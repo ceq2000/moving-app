@@ -1,12 +1,12 @@
 import React from 'react';
 import classNames from 'classnames';
 import { Container } from 'reactstrap';
-import NavBar from './Navbar';
+// import NavBar from './Navbar';
 // import { Switch, Route } from 'react-router-dom';
 
 export default props => (
     <Container fluid className={classNames('content', { 'is-open': props.isOpen })}>
-    <NavBar toggle={props.toggle} />
+    {/* <NavBar toggle={props.toggle} /> */}
         {props.children} 
         {/* <Switch>
             <Route exact path="/" component={() => "Hello"} />
