@@ -85,29 +85,6 @@ class Items extends Component {
                             <h1>What are you moving?</h1>
                         </Jumbotron>
                         <form>
-<<<<<<< HEAD
-                            {/* onclick this.setState of location to >>>>  */}
-                            <ButtonToolbar>
-                                {['Primary', 'Secondary', 'Success', 'Info', 'Warning', 'Danger'].map(
-                                    variant => (
-                                        <DropdownButton
-                                            title={variant}
-                                            variant={variant.toLowerCase()}
-                                            id={`dropdown-variants-${variant}`}
-                                            key={variant}
-                                        >
-                                            <Dropdown.Item eventKey="1">Action</Dropdown.Item>
-                                            <Dropdown.Item eventKey="2">Another action</Dropdown.Item>
-                                            <Dropdown.Item eventKey="3" active>
-                                                Active Item
-                                             </Dropdown.Item>
-                                            <Dropdown.Divider />
-                                            <Dropdown.Item eventKey="4">Separated link</Dropdown.Item>
-                                        </DropdownButton>
-                                    ),
-                                )}
-                            </ButtonToolbar>
-=======
                             <Form.Group controlId="exampleForm.ControlSelect1">
                                 <Form.Control as="select">
                                     <option id='0'>Where is it in the House?</option>
@@ -115,7 +92,6 @@ class Items extends Component {
                                     <option key={room} value={room}>{room}</option>)}
                                 </Form.Control>
                             </Form.Group>
->>>>>>> 5b13e933e9d2151bd70ac9bc351164f6626edcc1
 
                             <Input
                                 value={this.state.name}

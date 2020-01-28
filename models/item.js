@@ -44,23 +44,12 @@ const itemSchema = new Schema({
   rooms: { type: Array, required: true },
   location: { type: String, required: true },
   modelNumber: { type: String, required: false },
-<<<<<<< HEAD
-  serialNumber: { type: String, required: false },
-  description: { type: String, required: true },
-  purchaseDate: { type: Date, required: true },
-  purchasePrice: { type: String, required: true },
-  purchaseLocation: { type: String, required: true },
-  uploadImage: { type: String, required: false },
-  user: { type: Schema.Types.ObjectId, ref: 'User', required: true },
-  date: { type: Schema.Types.Date, required: true }
-=======
-  purchaseDate: {type: Date},
-  purchasePrice: {type: String},
-  purchaseLocation: {type: Date},
+  purchaseDate: { type: Date },
+  purchasePrice: { type: String },
+  purchaseLocation: { type: Date },
   description: { type: String },
   date: { type: Date, default: Date.now },
-  user: { type: Schema.Types.ObjectId, ref: 'User', required: true}
->>>>>>> 5b13e933e9d2151bd70ac9bc351164f6626edcc1
+  user: { type: Schema.Types.ObjectId, ref: 'User', required: true }
 });
 
 const Item = mongoose.model("Item", itemSchema);
