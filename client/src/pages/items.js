@@ -126,7 +126,7 @@ class Items extends Component {
                                 value={this.state.purchaseLocation}
                                 onChange={this.handleInputChange}
                                 name="purchaseLocation"
-                                placeholder="Location (required)"
+                                placeholder=" Purchase Location (required)"
                             />
                             <TextArea
                                 value={this.state.description}
