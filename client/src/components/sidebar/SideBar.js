@@ -20,7 +20,7 @@ const SideBar = props => (
           <SubMenu title="Your Saved Homes" icon={faHome} items={submenus[0]}/>
           <NavLink tag={Link} to={'/home'}>
             </NavLink>
-          <SubMenu title="Saved Home" icon={faHome} items={submenus[1]}/>
+          <SubMenu title="Saved Rooms" icon={faHome} items={submenus[1]}/>
           <NavItem>
             <NavLink tag={Link} to={'/about'}>
               <FontAwesomeIcon icon={faBriefcase} className="mr-2"/>About
@@ -76,12 +76,24 @@ const SideBar = props => (
     ],
     [
       {
-        title: "rooms",
-        target: "/books",          
+        title: "Master Bedroom",
+        target: "/MasterBedroom",          
       },
       {
-        title: "Items",
-        target: "/items",        
+        title: "Kitchen",
+        target: "/Kitchen",        
+      },
+      {
+        title: "Bathroom",
+        target: "/Bathroom",        
+      },
+      {
+        title: "Living Room",
+        target: "/LivingRoom",        
+      },
+      {
+        title: "Dining Room",
+        target: "/DiningRoom",        
       }
     ]
   ]
