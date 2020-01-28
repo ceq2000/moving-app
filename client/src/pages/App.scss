@@ -1,17 +1,16 @@
-@import "utilities/App";
-@import url('https://fonts.googleapis.com/css?family=Catamaran|Handlee&display=swap');
-
 
 .form-control{
     font-size: 20px;
+    box-shadow: 5px 5px 5px black;
+    // background-color: #AEB972;
     // font-family: 'Nanum Pen Script', cursive;
 }
-strong, h1{
-    font-family: 'Nanum Pen Script', cursive;
+form {
+    // box-shadow: 5px 5px 5px black
+
 }
 .container-1 {
     background-image: url("https://cdn.pixabay.com/photo/2015/05/05/01/10/house-753270_1280.jpg");
-    // background-image: url("/images/logo.png");
     z-index: 1;
 }
 .mt-4 {
@@ -19,29 +18,30 @@ strong, h1{
     z-index: -1;
     color: black;
     position: inherit;
+    box-shadow: 5px 5px 5px black;
+
     
 }
 .btn {
-    box-shadow: 10px 10px 10px gray;
-background-color: #2788ff;
-border-color: #2788ff;
+    box-shadow: 5px 5px 5px black;
+background-color: #AEB972;
+border-color: #AEB972;
 // font-family: 'Nanum Pen Script', cursive;
 }
 .detailstwo {
     // font-family: 'Nanum Pen Script', cursive;
     font-family: 'Handlee', cursive;
+    box-shadow: 5px 5px 5px black;
+
 
 }
 .items {
 
         // font-family: 'Nanum Pen Script', cursive;
         font-family: 'Handlee', cursive;
-    
+        box-shadow: 5px 5px 5px black;
 }
-.sidebar-header {
-    font-family: cursive;
-}
-.btn btn-success {
-    font-family: Catamaran;
-    color: Yellow;
+.fbook {
+    display: inherit;
+    position: inherit;
 }

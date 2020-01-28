@@ -2,8 +2,12 @@
 @import url('https://fonts.googleapis.com/css?family=Catamaran|Handlee&display=swap');
 
 .jumbotron {
+    background-color: #E492AC;
+    opacity: .9;
     font-family: 'catamaran';
-    background-image: url({LogoImage});
+    font-size: 80px;
+    box-shadow: 5px 5px 5px black;
+
 }
 h1 {
     font-family: Catamaran;
@@ -11,11 +15,16 @@ h1 {
 .list-group-item {
     font-family: Handlee;
     font-size: 24px;
+    box-shadow: 5px 5px 5px black;
 }
 .form-control {
     font-family: Handlee;
     font-size: 24px;
+    box-shadow: 5px 5px 5px black;
+
 }
 .form-group {
     font-family: Catamaran;
+    // box-shadow: 5px 5px 5px black;
+
 }

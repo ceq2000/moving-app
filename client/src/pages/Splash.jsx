@@ -9,20 +9,20 @@ export default function Splash(props) {
             <Row>
                 <Col >
                     <Jumbotron fluid className='mt-4'>
-                        <h1 className='text-center'>Hello world</h1>
+                        <h1 className='text-center'>Want to know what you own?</h1>
                     </Jumbotron>
                     <Row className="text-center">
                         <Col >
                             <Button 
                             type="submit" 
-                            className="btn btn-success" 
+                            className="btn btn-primary" 
                             onClick={() => props.history.push('/signup')}
                             >Signup</Button>
                         </Col>
                         <Col >
                             <Button 
                             type="submit" 
-                            className="btn btn-success"
+                            className="btn btn-primary"
                             onClick={() => props.history.push('/login')}
                             >Login</Button>
                         </Col>
@@ -32,6 +32,10 @@ export default function Splash(props) {
                     </Jumbotron>
                 </Col>
             </Row>
+            <Row>
+                <p className="fbook" >Like us on Facebook</p>
+            </Row>
         </Container>
+        
     );
 }
