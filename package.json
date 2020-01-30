@@ -1,7 +1,7 @@
 {
-  "name": "moving-app",
+  "name": "Talli-Home",
   "version": "1.0.0",
-  "description": "",
+  "description": "A React based Home Inventory app with JWT Authorization",
   "main": "server.js",
   "scripts": {
     "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
