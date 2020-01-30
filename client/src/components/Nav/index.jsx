@@ -12,7 +12,7 @@ const Nav = (props) => {
    <div container="navlink">
   <Navbar className="ml-auto" navbar>
           <NavItem>
-            <NavLink tag={Link} to={'/page-1'}>Home</NavLink>
+            <NavLink tag={Link} to={'/items'}>Home</NavLink>
           </NavItem>
           <NavItem>
             <NavLink tag={Link} to={'/page-2'}>Category</NavLink>
